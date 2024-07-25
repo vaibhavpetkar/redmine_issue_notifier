@@ -3,8 +3,8 @@ require 'redmine'
 Redmine::Plugin.register :redmine_issue_notifier do
   name 'Redmine Issue Notifier plugin'
   author 'Vaibhav Petkar'
-  description 'This plugin sends email notifications for issues with 5 days remaining to the end date'
-  version '0.0.1'
+  description 'Sends email notifications for issues with 5 days remaining to the end date'
+  version '0.0.2'
   requires_redmine :version_or_higher => '4.0.0'
 
   settings(
@@ -20,3 +20,4 @@ Redmine::Plugin.register :redmine_issue_notifier do
 end
 
 require_relative 'lib/issue_notifier_hook'
+ 

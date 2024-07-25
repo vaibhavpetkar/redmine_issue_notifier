@@ -1,0 +1,20 @@
+<p>
+  <label for="cc">CC (comma-separated):</label>
+  <input type="text" name="settings[cc]" id="cc" value="<%= Setting.plugin_redmine_issue_notifier['cc'] %>">
+</p>
+<p>
+  <label for="subject_prefix">Subject Prefix:</label>
+  <input type="text" name="settings[subject_prefix]" id="subject_prefix" value="<%= Setting.plugin_redmine_issue_notifier['subject_prefix'] %>">
+</p>
+<p>
+  <label for="send_time">Send Time (HH:MM):</label>
+  <input type="text" name="settings[send_time]" id="send_time" value="<%= Setting.plugin_redmine_issue_notifier['send_time'] %>">
+</p>
+<p>
+  <label for="max_notifications_per_day">Max Notifications Per Day:</label>
+  <input type="number" name="settings[max_notifications_per_day]" id="max_notifications_per_day" value="<%= Setting.plugin_redmine_issue_notifier['max_notifications_per_day'] %>">
+</p>
+<p>
+  <label for="custom_field_id">Custom Field ID for Email Addresses:</label>
+  <input type="number" name="settings[custom_field_id]" id="custom_field_id" value="<%= Setting.plugin_redmine_issue_notifier['custom_field_id'] %>">
+</p>
