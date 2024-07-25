@@ -1,4 +1,3 @@
- 
 class Mailer < ActionMailer::Base
     def issue_notification(issue)
       @issue = issue
